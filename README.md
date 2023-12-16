@@ -1,4 +1,4 @@
-# homebrew-sqlite3-to-mysql
+# homebrew-mysql-to-sqlite3
 
 ## Installation
 
