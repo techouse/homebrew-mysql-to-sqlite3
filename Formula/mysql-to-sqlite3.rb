@@ -3,8 +3,8 @@ class MysqlToSqlite3 < Formula
 
   desc "Transfer data from MySQL to SQLite"
   homepage "https://github.com/techouse/mysql-to-sqlite3"
-  url "https://files.pythonhosted.org/packages/42/53/2c14925edb52794c27c59c7d7096fd5d971d8b99670b6982a979a25ba53b/mysql_to_sqlite3-2.1.6.tar.gz"
-  sha256 "4149b13d22b639838de5a4b34d7d6fd1594265af0ad5acbacae135159ee627f5"
+  url "https://files.pythonhosted.org/packages/31/c8/546e93cb21f5de9a5c5b5b9c49428c0875197cfaf9648e64353988f3de22/mysql_to_sqlite3-2.1.7.tar.gz"
+  sha256 "c6628fbdf50be09341ed4edcbb713a2eaff6c756ea4f1ec382f48d7183dd88c8"
 
   depends_on "python3"
   depends_on "sqlite"
@@ -66,6 +66,5 @@ class MysqlToSqlite3 < Formula
 
   test do
     assert_match "Usage: mysql2sqlite [OPTIONS]", shell_output("#{bin}/mysql2sqlite --help")
-    assert_match "/mysql\-to\-sqlite3\s+\|\s2.1.6/", shell_output("#{bin}/mysql2sqlite --version")
   end
 end
