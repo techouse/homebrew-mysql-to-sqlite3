@@ -3,7 +3,9 @@
 ## Installation
 
 ```bash
-brew install techouse/mysql-to-sqlite3/mysql-to-sqlite3
+brew tap techouse/mysql-to-sqlite3
+brew install mysql-to-sqlite3
+mysql2sqlite --help
 ```
 
 ## Usage
