@@ -3,8 +3,8 @@ class MysqlToSqlite3 < Formula
 
   desc "Transfer data from MySQL to SQLite"
   homepage "https://github.com/techouse/mysql-to-sqlite3"
-  url "https://files.pythonhosted.org/packages/bf/ab/fb0dc41904599aa5c8c4652b35d9ddf9ce9a0ee46bea245a21dd87261856/mysql_to_sqlite3-2.1.8.tar.gz"
-  sha256 "daa54e110aec028c7ea04cfec5baa5f151fec917ca7efe0f234641ab9e2651c1"
+  url "https://files.pythonhosted.org/packages/3d/6b/836e3844c74c14d605adc39d456d0aa903dab1c81e8163e298a695ff784b/mysql_to_sqlite3-2.1.9.tar.gz"
+  sha256 "b7ad6ffc0d6d37b852df4b81326af185c445eda3687ad00ddb8070da5b3937bc"
 
   depends_on "python3"
   depends_on "sqlite"
@@ -15,13 +15,8 @@ class MysqlToSqlite3 < Formula
   end
 
   resource "mysql-connector-python" do
-    url "https://github.com/mysql/mysql-connector-python/archive/refs/tags/8.2.0.tar.gz"
-    sha256 "29a7cb0b24a4f5ccda597c211254db8377493e95e36ca4ee05b15dba6e9c6e78"
-  end
-
-  resource "protobuf" do
-    url "https://files.pythonhosted.org/packages/ba/dd/f8a01b146bf45ac12a829bbc599e6590aa6a6849ace7d28c42d77041d6ab/protobuf-4.21.12.tar.gz"
-    sha256 "7cd532c4566d0e6feafecc1059d04c7915aec8e182d1cf7adee8b24ef1e2e6ab"
+    url "https://github.com/mysql/mysql-connector-python/archive/refs/tags/8.3.0.tar.gz"
+    sha256 "968323a49d8100c5660a5f4d1f07a27982de07e6fe6cec21bcd55cfcacc9501e"
   end
 
   resource "python-slugify" do
