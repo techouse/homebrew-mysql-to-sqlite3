@@ -15,8 +15,8 @@ class MysqlToSqlite3 < Formula
   end
 
   resource "mysql-connector-python" do
-    url "https://github.com/mysql/mysql-connector-python/archive/refs/tags/8.2.0.tar.gz"
-    sha256 "29a7cb0b24a4f5ccda597c211254db8377493e95e36ca4ee05b15dba6e9c6e78"
+    url "https://github.com/mysql/mysql-connector-python/archive/refs/tags/8.3.0.tar.gz"
+    sha256 "968323a49d8100c5660a5f4d1f07a27982de07e6fe6cec21bcd55cfcacc9501e"
   end
 
   resource "python-slugify" do
@@ -56,6 +56,13 @@ class MysqlToSqlite3 < Formula
 
   def install
     virtualenv_create(libexec, "python3")
+
+    resource("mysql-connector-python").stage do
+      cd "mysql-connector-python" do
+        system libexec/"bin/python3", *Language::Python.setup_install_args(libexec)
+      end
+    end
+
     virtualenv_install_with_resources
   end
 
