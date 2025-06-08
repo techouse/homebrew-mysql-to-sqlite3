@@ -3,21 +3,21 @@ class MysqlToSqlite3 < Formula
 
   desc "Transfer data from MySQL to SQLite"
   homepage "https://github.com/techouse/mysql-to-sqlite3"
-  url "https://files.pythonhosted.org/packages/0c/16/a33beb3ae1007d2154f0e0c1a0da789d883c22797a9fd033e3331f8d829d/mysql_to_sqlite3-2.3.0.tar.gz"
-  sha256 "e5314a7394ea980408efd2272f69a42917979501b99b28d9a56707293aa62313"
+  url "https://files.pythonhosted.org/packages/58/57/a04f43c8ccb5138ee578cc69f7ca0e38447ee192f8c55c571f29f6f51355/mysql_to_sqlite3-2.4.1.tar.gz"
+  sha256 "b34a57b80a299073f6f11cc4ec216054319daae0e26936a8a01dbd3daf8c53d4"
 
   depends_on "python3"
   depends_on "python-setuptools"
   depends_on "sqlite"
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/96/d3/f04c7bfcf5c1862a2a5b845c6b2b360488cf47af55dfa79c98f6a6bf98b5/click-8.1.7.tar.gz"
-    sha256 "ca9853ad459e787e2192211578cc907e7594e294c7ccc834310722b41b9ca6de"
+    url "https://files.pythonhosted.org/packages/60/6c/8ca2efa64cf75a977a0d7fac081354553ebe483345c734fb6b6515d96bbc/click-8.2.1.tar.gz"
+    sha256 "27c491cc05d968d271d5a1db13e3b5a184636d9d930f148c50b038f0d0646202"
   end
 
   resource "mysql-connector-python" do
-    url "https://github.com/mysql/mysql-connector-python/archive/refs/tags/9.0.0.tar.gz"
-    sha256 "72c75ccb759cee31474906538b3132f3e26bc91d2913b415ea10d699876dbf9c"
+    url "https://github.com/mysql/mysql-connector-python/archive/refs/tags/9.3.0.tar.gz"
+    sha256 "68b4fab8f4cdfc765228335b28fa9da8e3353dfe77e74d12880d96dd6b9799e9"
   end
 
   resource "python-slugify" do
@@ -26,8 +26,8 @@ class MysqlToSqlite3 < Formula
   end
 
   resource "six" do
-    url "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz"
-    sha256 "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"
+    url "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz"
+    sha256 "ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81"
   end
 
   resource "python-dateutil" do
@@ -36,8 +36,8 @@ class MysqlToSqlite3 < Formula
   end
 
   resource "types-python-dateutil" do
-    url "https://files.pythonhosted.org/packages/61/c5/c3a4d72ffa8efc2e78f7897b1c69ec760553246b67d3ce8c4431fac5d4e3/types-python-dateutil-2.9.0.20240316.tar.gz"
-    sha256 "5d2f2e240b86905e40944dd787db6da9263f0deabef1076ddaed797351ec0202"
+    url "https://files.pythonhosted.org/packages/ef/88/d65ed807393285204ab6e2801e5d11fbbea811adcaa979a2ed3b67a5ef41/types_python_dateutil-2.9.0.20250516.tar.gz"
+    sha256 "13e80d6c9c47df23ad773d54b2826bd52dbbb41be87c3f339381c1700ad21ee5"
   end
 
   resource "pytimeparse2" do
@@ -46,8 +46,8 @@ class MysqlToSqlite3 < Formula
   end
 
   resource "simplejson" do
-    url "https://files.pythonhosted.org/packages/79/79/3ccb95bb4154952532f280f7a41979fbfb0fbbaee4d609810ecb01650afa/simplejson-3.19.2.tar.gz"
-    sha256 "9eb442a2442ce417801c912df68e1f6ccfcd41577ae7274953ab3ad24ef7d82c"
+    url "https://files.pythonhosted.org/packages/af/92/51b417685abd96b31308b61b9acce7ec50d8e1de8fbc39a7fd4962c60689/simplejson-3.20.1.tar.gz"
+    sha256 "e64139b4ec4f1f24c142ff7dcafe55a22b811a74d86d66560c8815687143037d"
   end
 
   resource "tabulate" do
@@ -61,13 +61,13 @@ class MysqlToSqlite3 < Formula
   end
 
   resource "tqdm" do
-    url "https://files.pythonhosted.org/packages/58/83/6ba9844a41128c62e810fddddd72473201f3eacde02046066142a2d96cc5/tqdm-4.66.5.tar.gz"
-    sha256 "e1020aef2e5096702d8a025ac7d16b1577279c9d63f8375b63083e9a5f0fcbad"
+    url "https://files.pythonhosted.org/packages/a8/4b/29b4ef32e036bb34e4ab51796dd745cdba7ed47ad142a9f4a1eb8e0c744d/tqdm-4.67.1.tar.gz"
+    sha256 "f8aef9c52c08c13a65f30ea34f4e5aac3fd1a34959879d7e59e63027286627f2"
   end
 
   resource "typing-extensions" do
-    url "https://files.pythonhosted.org/packages/df/db/f35a00659bc03fec321ba8bce9420de607a1d37f8342eee1863174c69557/typing_extensions-4.12.2.tar.gz"
-    sha256 "1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"
+    url "https://files.pythonhosted.org/packages/d1/bc/51647cd02527e87d05cb083ccc402f93e441606ff1f01739a62c8ad09ba5/typing_extensions-4.14.0.tar.gz"
+    sha256 "8676b788e32f02ab42d9e7c61324048ae4c6d844a399eebace3d4979d75ceef4"
   end
 
   def install
