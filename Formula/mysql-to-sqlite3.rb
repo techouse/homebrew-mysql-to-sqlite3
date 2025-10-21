@@ -3,8 +3,8 @@ class MysqlToSqlite3 < Formula
 
   desc "Transfer data from MySQL to SQLite"
   homepage "https://github.com/techouse/mysql-to-sqlite3"
-  url "https://files.pythonhosted.org/packages/78/35/5822fdb3752787f8d9ac185b9b195c73b615f2c1115b0b4c61a64b46bc89/mysql_to_sqlite3-2.5.1.tar.gz"
-  sha256 "a1acb3e9a074f74577d1d5d3737a0371d42434126830a58f3ff9f739d42b831d"
+  url "https://files.pythonhosted.org/packages/c9/42/69e719e88a396ce5430a5efea230d4ae3af4d059b8ad5598a2bf2140b1c9/mysql_to_sqlite3-2.5.2.tar.gz"
+  sha256 "cfd19682f85457dd91f74e477821d29fc03c4ffce3a7338298e8ee21d41fa1f5"
 
   depends_on "python3"
   depends_on "python-setuptools"
@@ -43,6 +43,11 @@ class MysqlToSqlite3 < Formula
   resource "simplejson" do
     url "https://files.pythonhosted.org/packages/af/92/51b417685abd96b31308b61b9acce7ec50d8e1de8fbc39a7fd4962c60689/simplejson-3.20.1.tar.gz"
     sha256 "e64139b4ec4f1f24c142ff7dcafe55a22b811a74d86d66560c8815687143037d"
+  end
+
+  resource "sqlglot" do
+    url "https://files.pythonhosted.org/packages/b5/3d/bf8b4a96b934c26ec83f94048ec201d17cd95fb3c2e6930bbcfaaaad6813/sqlglot-27.28.1.tar.gz"
+    sha256 "01c03da1aa0c7773002cfb4a58bd4b0656196e0164aee1d83104b3d3cc1475f3"
   end
 
   resource "tabulate" do
