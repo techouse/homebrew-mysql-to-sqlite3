@@ -6,8 +6,8 @@ class MysqlToSqlite3 < Formula
   url "https://files.pythonhosted.org/packages/49/6d/1ac0849d88b7ca085b483a420f1d985d7244f55993264db44bc745cf755a/mysql_to_sqlite3-2.5.4.tar.gz"
   sha256 "4e33943bc3ed3904a4ed77e4340b9ba0b8ed811a4065dba6b465578330536b22"
 
-  depends_on "python@3.14"
   depends_on "python-setuptools"
+  depends_on "python@3.14"
   depends_on "sqlite"
 
   resource "click" do
