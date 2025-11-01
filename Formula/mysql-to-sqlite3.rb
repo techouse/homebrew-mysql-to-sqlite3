@@ -8,7 +8,6 @@ class MysqlToSqlite3 < Formula
   license "MIT"
   head "https://github.com/techouse/mysql-to-sqlite3.git", branch: "master"
 
-  depends_on "python-setuptools"
   depends_on "python@3.14"
 
   uses_from_macos "sqlite"
