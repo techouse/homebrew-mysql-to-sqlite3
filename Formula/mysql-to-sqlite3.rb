@@ -3,8 +3,8 @@ class MysqlToSqlite3 < Formula
 
   desc "Transfer data from MySQL to SQLite"
   homepage "https://github.com/techouse/mysql-to-sqlite3"
-  url "https://files.pythonhosted.org/packages/f8/23/0d5abb00f7a6a0faf9f2df781ec8f6a234efaea02ebae98fbd660c0db3cc/mysql_to_sqlite3-2.5.3.tar.gz"
-  sha256 "b7fec6036d4718be8d2942a6345a8cf2c36d62d1eb89436e9a6289c9b2417bd3"
+  url "https://files.pythonhosted.org/packages/49/6d/1ac0849d88b7ca085b483a420f1d985d7244f55993264db44bc745cf755a/mysql_to_sqlite3-2.5.4.tar.gz"
+  sha256 "4e33943bc3ed3904a4ed77e4340b9ba0b8ed811a4065dba6b465578330536b22"
 
   depends_on "python3"
   depends_on "python-setuptools"
